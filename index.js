@@ -18,7 +18,7 @@ function currentLine(curr){
   var output = "The line is currently: "
   if(curr.length>0){
   for(var x = 0;x<curr.length;x++){
-  output  += `${x}. ${curr[x]}`
+  output  += `${x+1}. ${curr[x]} `
   }
     return output;
   }
