@@ -17,9 +17,10 @@ function nowServing(curr){
 function currentLine(curr){
   var output = "The line is currently: "
   if(curr.length>0){
-  for(var x = 0;x<curr.length;x++){
+  for(var x = 0;x<curr.length-1;x++){
   output  += `${x+1}. ${curr[x]}, `
   }
+  output += `${curr.length}. ${curr[curr.length-1]}`
     return output;
   }
   else{
